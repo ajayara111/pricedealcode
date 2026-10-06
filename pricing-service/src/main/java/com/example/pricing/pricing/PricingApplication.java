@@ -1,0 +1,11 @@
+package com.example.pricing.pricing;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class PricingApplication {
+    public static void main(String[] a) {
+        SpringApplication.run(PricingApplication.class, a);
+    }
+}

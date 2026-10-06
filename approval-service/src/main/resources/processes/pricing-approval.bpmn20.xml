@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" targetNamespace="PricingStudio">
+    <process id="pricingApproval" name="Pricing Approval" isExecutable="true">
+        <startEvent id="start"/>
+        <sequenceFlow id="f1" sourceRef="start" targetRef="finance"/>
+        <userTask id="finance" name="Finance Approval"/>
+        <sequenceFlow id="f2" sourceRef="finance" targetRef="product"/>
+        <userTask id="product" name="Product Approval"/>
+        <sequenceFlow id="f3" sourceRef="product" targetRef="end"/>
+        <endEvent id="end"/>
+    </process>
+</definitions>

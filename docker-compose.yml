@@ -1,0 +1,8 @@
+services:
+  oracle:
+    image: gvenzl/oracle-free:23-slim
+    environment: [ ORACLE_PASSWORD=pricing ]
+    ports: [ "1521:1521" ]
+  kafka:
+    image: apache/kafka:3.9.0
+    ports: [ "9092:9092" ]
